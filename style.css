@@ -1,0 +1,75 @@
+/* Updated CSS with Montserrat font */
+body {
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to the whole body */
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.chat-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-box {
+    max-height: 60vh;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to the chat box */
+}
+
+.chat-input {
+    display: flex;
+}
+
+#username,
+#message-input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#send-button {
+    padding: 10px;
+    background-color: #00563B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button {
+    padding: 5px;
+    background-color: #ff5757;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Make sender's name bold and apply Montserrat font */
+.message-sender {
+    font-weight: bold;
+    margin-right: 5px; /* Add space between sender's name and message content */
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to the sender's name */
+}
+
+/* Align delete button with message content */
+.chat-message {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.message-content {
+    flex: 1;
+}
